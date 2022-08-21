@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Hibernate1</display-name>
+  
+  	<servlet>
+		<servlet-name>ProfServlet</servlet-name>
+		<servlet-class>gestion.servlet.ProfServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProfServlet</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ProfServlet</servlet-name>
+		<url-pattern>/prof</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ProfServlet</servlet-name>
+		<url-pattern>/addProf</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ProfServlet</servlet-name>
+		<url-pattern>/editProf</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ProfServlet</servlet-name>
+		<url-pattern>/deleteProf</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+		<servlet-name>SalleServlet</servlet-name>
+		<servlet-class>gestion.servlet.SalleServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SalleServlet</servlet-name>
+		<url-pattern>/salle</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	
+	
+	
+	
+	<servlet>
+		<servlet-name>Test</servlet-name>
+		<servlet-class>gestion.servlet.Test</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Test</servlet-name>
+		<url-pattern>/test</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet-mapping>
+		<servlet-name>default</servlet-name>
+		<url-pattern>*.css</url-pattern>
+	</servlet-mapping>
+	 <servlet-mapping>
+		<servlet-name>default</servlet-name>
+		<url-pattern>*.js</url-pattern>
+	</servlet-mapping>
+		 <servlet-mapping>
+		<servlet-name>default</servlet-name>
+		<url-pattern>*.min.css</url-pattern>
+	</servlet-mapping>
+	 <servlet-mapping>
+		<servlet-name>default</servlet-name>
+		<url-pattern>*.min.js</url-pattern>
+	</servlet-mapping>
+	 <servlet-mapping>
+		<servlet-name>default</servlet-name>
+		<url-pattern>*.jpg</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>default</servlet-name>
+		<url-pattern>*.woff</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>default</servlet-name>
+		<url-pattern>*.woff2</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>default</servlet-name>
+		<url-pattern>*.ttf</url-pattern>
+	</servlet-mapping>
+
+</web-app>
