@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+ <class name="bean.Occuper" table="OCCUPER">
+ 	<id name="id" column="id">
+ 		<generator class="native"></generator>
+ 	</id>
+ 	
+ 	
+ 	<property name="codeprof" column="codeprof"></property>
+ 	<property name="codesal" column="codesal"></property>
+ 	<property name="date" column="date"></property>
+ 	
+ 	
+ </class>
+  
+</hibernate-mapping>

@@ -50,11 +50,7 @@
 	                  $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
 	              });
 	            });
-	        });
-        </script>
-        
-        <script type="text/javascript">
-            $(document).ready(function() {
+	    
             	$('.btnModifierProf').click(function(){
 	                var codeprof = $(this).attr('codeprof');
 	                var nom = $(this).attr('nom');
@@ -72,6 +68,75 @@
             } );
             
             
+        </script>
+        
+        <script type="text/javascript">
+            $(document).ready(function() {
+            	$(".rechercheSalle").on("keyup", function() {
+	                var value = $(this).val().toLowerCase();
+	                //console.log( value);
+	                $(' #tableSalle tr').filter(function(){
+	                  $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+	              });
+	            });
+                
+            	$('.btnModifierSalle').click(function(){
+	                var codesal = $(this).attr('codesal');
+	                var designation = $(this).attr('designation');
+	                
+	                $('.codesal').val(codesal);
+	                $('.designation').val(designation);
+                });
+            	
+            	$('.btnDeleteSalle').click(function(){
+	                $('.deletecodesal').val($(this).attr('codesal'));
+                });
+            } );
+        </script>
+        
+         <script type="text/javascript">
+            $(document).ready(function() {
+            	$(".rechercheOccuper").on("keyup", function() {
+	                var value = $(this).val().toLowerCase();
+	                //console.log( value);
+	                $(' #tableOccuper tr').filter(function(){
+	                  $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+	              });
+	            });
+                
+            	$('.btnModifierOccuper').click(function(){
+	                var idOcc = $(this).attr('idOcc');
+	                var nomProf = $(this).attr('nomProf');
+	                var designSalle = $(this).attr('designSalle');
+	                var date = $(this).attr('date');
+
+	                var monthNames = ["janvier", "février","mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"];
+	                var parts = date.split(" ");
+	                var monthNUM = "";
+	                for(var i = 0; i<= monthNames.length; i++){
+						if(monthNames[i] == parts[1]){
+							if(i<=9){
+								i = i+1
+								monthNUM = "0"+i;
+							}else{
+								monthNUM = i+1;
+							}
+						}
+	                }
+	              	var realDate = parts[2]+"-"+monthNUM+"-"+parts[0];
+
+	               // console.log(realDate);
+	                
+	                $('.modifId').val(idOcc);
+	                $('.modifProf').val(nomProf);
+	                $('.modifsalle').val(designSalle);
+	                $('.modifdate').attr('value',realDate);
+                });
+            	
+            	$('.btnDeleteOcc').click(function(){
+	                $('.deletecodeOcc').val($(this).attr('idOcc'));
+                });
+            } );
         </script>
         
     </body>

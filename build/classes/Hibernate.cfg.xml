@@ -33,6 +33,7 @@
          
         <mapping resource="bean/Prof.hbm.xml"/>
         <mapping resource="bean/Salle.hbm.xml"/>
+        <mapping resource="bean/Occuper.hbm.xml"/>
   
            
     </session-factory>

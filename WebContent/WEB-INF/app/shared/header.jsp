@@ -134,7 +134,7 @@
                             </li>
                             
                             <li class="has-submenu">
-                                <a href="index.html"><i class=" fas fa-tasks"></i>Traitement</a>
+                                <a href="<%=request.getContextPath()%>/occuper"><i class=" fas fa-tasks"></i>Traitement</a>
                             </li>
 
                            

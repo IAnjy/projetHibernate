@@ -37,6 +37,45 @@
 		<servlet-name>SalleServlet</servlet-name>
 		<url-pattern>/salle</url-pattern>
 	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SalleServlet</servlet-name>
+		<url-pattern>/addSalle</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SalleServlet</servlet-name>
+		<url-pattern>/editSalle</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SalleServlet</servlet-name>
+		<url-pattern>/deleteSalle</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	
+	<servlet>
+		<servlet-name>OccupeServlet</servlet-name>
+		<servlet-class>gestion.servlet.OccupeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>OccupeServlet</servlet-name>
+		<url-pattern>/occuper</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>OccupeServlet</servlet-name>
+		<url-pattern>/addOccuper</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>OccupeServlet</servlet-name>
+		<url-pattern>/deleteOccuper</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>OccupeServlet</servlet-name>
+		<url-pattern>/editOccuper</url-pattern>
+	</servlet-mapping>
+	
+	
+	
 	
 	
 	

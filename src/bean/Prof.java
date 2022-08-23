@@ -14,8 +14,6 @@ public class Prof {
 	}
 	
 	
-	
-	
 	public Prof(String nom, String prenom, String grade) {
 		super();
 		this.nom = nom;
